@@ -1,0 +1,27 @@
+@import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
+@import "tailwindcss";
+
+
+/* Base layer → CSS variables */
+@layer base {
+  :root {
+    /* Clean India tricolor gradient */
+    --gradient-tricolor: linear-gradient(
+      90deg,
+      #FF671F,  /* Saffron */
+      #17a661   /* Green */
+    );
+  }
+}
+
+/* Utilities layer */
+@layer utilities {
+  .text-tricolor {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-tricolor);
+  }
+
+  .bg-tricolor {
+    background-image: var(--gradient-tricolor);
+  }
+}
