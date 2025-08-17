@@ -49,13 +49,14 @@ MONGO_URI=yourmongodbconnectionstring
 NODE_ENV=dev
 ```
 
-Create `.env` in the **client** folder:
+Create `.env` in the **frontend** folder:
 ```env
 VITE_API_BASE_URL=http://localhost:5000/api
 VITE_CLOUDINARY_CLOUD_NAME=cloudinary_cloud_name
 VITE_CLOUDINARY_UPLOAD_PRESET=present_mode
 ```
 
+### Local Running
 1. Clone the repository:
    ```bash
    git clone https://github.com/aadarshantony/JeevanID.git
@@ -84,11 +85,6 @@ Usage Instructions
 2. In case of an accident, scanning the QR code instantly and hitting report alerts and send a card to the medics department.
 3. Admins can monitor all incidents and response metrics through the dashboard.
 
-Screenshots
------------
-![Dashboard](link-to-screenshot.png)
-![Accident Alert](link-to-screenshot.png)
-![QR Code Scan](link-to-screenshot.png)
 
 Demo Link
 ---------
