@@ -41,9 +41,9 @@ const Landing = () => {
         </div>
 
         {/* Right Side */}
-        <div className="md:w-1/2 relative flex justify-center items-center">
+        <div className="md:w-1/2 relative flex justify-center items-center ">
           {/* Floating card behind image */}
-          <div className="absolute -top-8 -right-8 w-72 h-72 rounded-3xl bg-gradient-to-tr from-orange-100 to-green-100 shadow-2xl transform rotate-6"></div>
+          <div className="absolute -top-8 -right-0 w-72 h-72 rounded-3xl bg-gradient-to-tr from-orange-100 to-green-100 shadow-2xl transform rotate-6 overflow-x-hidden"></div>
           <img
             src={HeroImg}
             alt="JeevanID Card"
