@@ -6,7 +6,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 // Orange marker icon
 const orangeIcon = new L.Icon({
-  iconUrl: "/public/map-pointer.png",
+  iconUrl: "https://cdn-icons-png.flaticon.com/512/684/684908.png",
   iconSize: [50, 40],
   iconAnchor: [15, 40],
   popupAnchor: [0, -40],
@@ -48,9 +48,6 @@ const ReportsMap = ({ incidents }) => {
             <p>
               <FaPhoneAlt className="inline mr-1" /> {incident.reporterPhone}
             </p>
-            <button className="mt-2 px-3 py-1 bg-orange-500 text-white rounded hover:bg-orange-600">
-              Assign Team
-            </button>
           </Popup>
         </Marker>
       ))}
