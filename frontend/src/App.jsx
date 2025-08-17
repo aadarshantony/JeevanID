@@ -8,6 +8,7 @@ import Dashboard from "./pages/Dashboard";
 import { Toaster } from 'react-hot-toast';
 import ViewId from "./pages/ViewId";
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         position="bottom-right"
         reverseOrder={true}
       />
-      <SpeedInsights/>
+      <SpeedInsights />
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -25,6 +26,7 @@ function App() {
           <Route path="/report" element={<Report />} />
           <Route path="/jeevanid" element={<ViewId />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
