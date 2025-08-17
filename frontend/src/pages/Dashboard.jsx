@@ -70,7 +70,12 @@ const Dashboard = () => {
     }
   };
 
-  if (isLoading) return <p className="p-4 text-center">Loading reports...</p>;
+  if (isLoading) return (
+    <div className="flex flex-col items-center justify-center gap-2 h-screen">
+      <div className="w-12 h-12 border-4 border-orange-500 border-dashed rounded-full animate-spin"></div>
+      <span className="text-gray-500 font-medium">Loading Reports</span>
+    </div>
+  );
   if (isError) return <p className="p-4 text-center text-red-500">Failed to load reports</p>;
 
   return (
