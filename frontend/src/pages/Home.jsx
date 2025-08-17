@@ -13,18 +13,18 @@ const Landing = () => {
       {/* Hero */}
       <section className="relative max-w-screen-xl mx-auto px-6 py-32 flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left Side */}
-        <div className="md:w-1/2 space-y-8">
-          <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
+        <div className="md:w-1/2 ">
+          <h1 className="text-5xl md:text-6xl font-extrabold leading-tight px-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-green-500 to-blue-500">
               Emergency
             </span>{" "}
             <br />
             <span className="text-gray-800">Response Dashboard</span>
           </h1>
-          <p className="text-gray-600 text-lg md:text-xl">
+          <p className="text-gray-600 text-lg md:text-xl p-4">
             Quickly report incidents and coordinate response in real-time. Save lives with efficient action.
           </p>
-          <div className="flex gap-4 mt-6">
+          <div className="flex gap-4 mt-6 max-[490px]:flex-col text-center px-4">
             <Link
               to="/report"
               className="px-8 py-4 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 text-white font-bold rounded-2xl shadow-lg transform hover:scale-105 transition-transform"
@@ -41,9 +41,9 @@ const Landing = () => {
         </div>
 
         {/* Right Side */}
-        <div className="md:w-1/2 relative flex justify-center items-center ">
+        <div className="md:w-1/2 relative flex justify-center items-center lg:top-0 top-10 px-4">
           {/* Floating card behind image */}
-          <div className="absolute -top-8 -right-0 w-72 h-72 rounded-3xl bg-gradient-to-tr from-orange-100 to-green-100 shadow-2xl transform rotate-6 overflow-x-hidden"></div>
+          <div className="absolute -top-8 -right-0 w-72 h-72 rounded-3xl bg-gradient-to-tr from-orange-100 to-green-100 shadow-2xl transform rotate-6 overflow-x-hidden max-[427px]:hidden"></div>
           <img
             src={HeroImg}
             alt="JeevanID Card"
@@ -53,7 +53,7 @@ const Landing = () => {
       </section>
 
       {/* Features */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
+      <section className="max-w-6xl mx-auto px-6 py-5">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-tricolor">
           Features
         </h2>
@@ -83,7 +83,7 @@ const Landing = () => {
 
 
       {/* CTA */}
-      <section className="bg-white py-20 mt-16 text-center">
+      <section className="bg-white py-20 mt-16 text-center px-4">
         <h2 className="text-4xl font-extrabold text-tricolor mb-4">
           Be Ready, Save Lives
         </h2>
@@ -91,7 +91,7 @@ const Landing = () => {
           Join our emergency network today and ensure rapid response when it matters most.
         </p>
         <JeevanIDCard />
-        <Link to="/register" className="inline-block px-12 py-5 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 text-white font-bold rounded-xl shadow-lg hover:scale-105 transition-transform">
+        <Link to="/register" className="inline-flex px-12 py-5 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 text-white font-bold rounded-xl shadow-lg hover:scale-105 transition-transform">
           Get your JeevanID
         </Link>
       </section>
